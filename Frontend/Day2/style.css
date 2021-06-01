@@ -1,0 +1,54 @@
+.letter {
+  width: max-content;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 30px;
+  margin-top: 30px; */
+  background-color: rgba(194, 169, 101, 0.5);
+  box-shadow: 6px 7px 70px 7px rgba(48, 47, 47, 0.3);
+  font-family: cursive;
+}
+
+table {
+  /* border-spacing: 0px; */
+  border-collapse: collapse;
+  width: 70%;
+}
+
+table th,
+table td {
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(202, 110, 5, 0.18);
+}
+
+img {
+  width: 519px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 20px 3px rgba(128, 128, 128, 0.5);
+}
+
+a {
+  display: block;
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+  padding: 3px;
+  text-decoration: none;
+  background-color: rgba(240, 186, 70, 0.664);
+  box-shadow: 3px 3px 20px 3px rgba(128, 128, 128, 0.5);
+  margin-left: 27%;
+  margin-right: auto;
+  width: max-content;
+  color: black;
+}
+
+a:hover {
+  background-color: rgba(252, 106, 143, 0.274);
+}
+hr {
+  background-color: rgba(128, 128, 128, 0.25);
+  border: 1px solid rgba(128, 128, 128, 0.25);
+}
