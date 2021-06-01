@@ -35,9 +35,10 @@ img {
 a {
   display: block;
   border: 1.5px solid rgba(0, 0, 0, 0.8);
-  padding: 3px;
+  border-radius: 8px;
+  padding: 8px;
   text-decoration: none;
-  background-color: rgba(240, 186, 70, 0.664);
+  background-color: rgba(241, 143, 107, 0.938);
   box-shadow: 3px 3px 20px 3px rgba(128, 128, 128, 0.5);
   margin-left: 27%;
   margin-right: auto;
