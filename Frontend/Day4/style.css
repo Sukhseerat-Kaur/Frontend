@@ -3,10 +3,10 @@ body {
 }
 .center-circles {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
   margin: auto;
 }
 .first-circle {
@@ -28,42 +28,53 @@ body {
 }
 
 .dot {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: grey;
-}
-
-.center-hands {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  box-shadow: 2px 2px 4px grey;
 }
 
 .hours {
   background-color: black;
-  height: 5px;
-  width: 90px;
-  margin-top: -2.5px;
-  margin-left: -1px;
+  position: absolute;
+  height: 10%;
+  width: 0.5%;
+  left: 49.75%;
+  top: 40%;
+  transform-origin: 50% 100%;
+  animation: tiktok 43200s infinite steps(60);
 }
 
 .minutes {
   background-color: black;
-  height: 3px;
-  width: 135px;
+  position: absolute;
+  height: 15%;
+  width: 0.35%;
   margin-top: -1.5px;
-  margin-left: -1px;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
+  left: 49.8%;
+  top: 35%;
+  transform-origin: 50% 100%;
+  animation: tiktok 3600s infinite steps(60);
 }
 
 .seconds {
   background-color: red;
-  height: 2px;
-  width: 110px;
-  margin-top: 1px;
-  margin-left: -1px;
-  transform: rotate(180deg);
-  transform-origin: 0 0;
+  height: 23%;
+  width: 0.25%;
+  position: absolute;
+  top: 32%;
+  left: 49.9%;
+  transform-origin: 50% 78%;
+  animation: tiktok 60s infinite steps(60);
+}
+
+@keyframes tiktok {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
