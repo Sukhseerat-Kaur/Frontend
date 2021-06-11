@@ -9,35 +9,48 @@ window.onload = () => {
   const mulbtn = document.getElementById("mul");
   const divbtn = document.getElementById("div");
 
-  addbtn.addEventListener("click", () => {
-    if (isNaN(num1.value) || isNaN(num2.value)) {
-      result.innerHTML = "Please enter VALID numbers";
-    } else {
-      result.innerHTML = "Result: " + (Number(num1.value) + Number(num2.value));
-    }
-  });
+  const buttonContainer = document.querySelector(".buttons");
 
-  subbtn.addEventListener("click", () => {
-    if (isNaN(num1.value) || isNaN(num2.value)) {
-      result.innerHTML = "Please enter VALID numbers";
-    } else {
-      result.innerHTML = "Result: " + (Number(num1.value) - Number(num2.value));
-    }
-  });
+  buttonContainer.addEventListener("click", doThis);
 
-  mulbtn.addEventListener("click", () => {
-    if (isNaN(num1.value) || isNaN(num2.value)) {
-      result.innerHTML = "Please enter VALID numbers";
-    } else {
-      result.innerHTML = "Result: " + Number(num1.value) * Number(num2.value);
-    }
-  });
+  function doThis(e) {
+    var operator = e.target.innerHTML;
+    switch (operator) {
+      case "+":
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+          result.innerHTML = "Please enter VALID numbers";
+        } else {
+          result.innerHTML =
+            "Result: " + (Number(num1.value) + Number(num2.value));
+        }
+        break;
 
-  divbtn.addEventListener("click", () => {
-    if (isNaN(num1.value) || isNaN(num2.value)) {
-      result.innerHTML = "Please enter VALID numbers";
-    } else {
-      result.innerHTML = "Result: " + Number(num1.value) / Number(num2.value);
+      case "-":
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+          result.innerHTML = "Please enter VALID numbers";
+        } else {
+          result.innerHTML =
+            "Result: " + (Number(num1.value) - Number(num2.value));
+        }
+        break;
+
+      case "*":
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+          result.innerHTML = "Please enter VALID numbers";
+        } else {
+          result.innerHTML =
+            "Result: " + Number(num1.value) * Number(num2.value);
+        }
+        break;
+
+      case "/":
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+          result.innerHTML = "Please enter VALID numbers";
+        } else {
+          result.innerHTML =
+            "Result: " + Number(num1.value) / Number(num2.value);
+        }
+        break;
     }
-  });
+  }
 };
