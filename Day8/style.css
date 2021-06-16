@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.container div {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f16c5d;
+  border-collapse: collapse;
+}
+
+div.red {
+  background-color: #e24e3f;
+}
+div.red:hover {
+  background-color: #e26f63;
+}
+
+div.white {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+}
+div.white:hover {
+  background-color: rgb(233, 224, 224);
+}
