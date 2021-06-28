@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(./images/restaurant.jpg) center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  perspective: 1000px;
+  width: 40%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cards {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: skewX(-10deg);
+  transition: transform 0.5s;
+}
+
+.cards:hover {
+  transform: scale(1.1) skewX(-7deg);
+}
+
+.cards .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./images/front.jpg) center/cover;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px 6px rgba(180, 175, 175, 0.24);
+}
+
+.cards .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cards .back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px 4px rgba(100, 97, 97, 0.432);
+}
+
+/* backfaces are there in every html image. Its the mirror image of the image.So we are hidding it as then neeche vale ka backface will be seen. But we dont need to do this as we are rotating the neeche vala card to 180deg.*/
+.cards .front,
+.cards .back {
+  backface-visibility: hidden;
+}
+
+/*front is stacked on back. Now imagine a sandwich. Rotating the card is like rotating a sandwhich. So if we dont do so then the backface of back will be visible which is the mirror image of back. So we want the front face of back whne we rotate the card. For that we rotated the neeche vala sandwhich ka slice to 180deg so that neeche vale sandwhich ke slice that is back ka front face dikhe. If we dont do this then back ka front face will be inside the sandwhich. But after doing this noe back ka back face whoch is mirror image is inside the sandwhich*/
+.back {
+  transform: rotateY(180deg);
+}
+
+.cards.flip {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+button {
+  color: rgb(223, 178, 148);
+  font-size: 30px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: rgba(218, 65, 38, 0.877);
+}
+
+button:hover {
+  box-shadow: 0 0 10px 0 #db6934 inset, 0 0 10px 4px #db6934;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+/*for responsiveness*/
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 50%;
+    height: 90%;
+  }
+}
