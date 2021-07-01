@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 35%;
+  /* height: 80%; */
+  height: max-content;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 6px #54565331;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.top {
+  width: 100%;
+  /* height: 20%; */
+  background-color: thistle;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.title,
+.top .timer {
+  background-color: rgb(147, 180, 240);
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+.top .timer {
+  background-color: wheat;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.middle {
+  width: 100%;
+  /* height: auto; */
+  background-color: rgb(238, 174, 149);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.middle .content {
+  font-family: "Hind Siliguri", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding: 0 20px;
+  font-size: 25px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.middle .content .options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* min-height: 60%; */
+  flex-wrap: wrap;
+}
+
+.middle .content .options button {
+  width: 100%;
+  /* height: 20%; */
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.middle .content .options button.incorrect {
+  background-color: red;
+}
+
+.middle .content .options button.correct {
+  background-color: chartreuse;
+}
+
+.middle .content .next {
+  padding: 10px 30px;
+  align-self: center;
+  border-radius: 30px;
+  /* height: 10%; */
+  border: none;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.starting-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.starting-div button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.over {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Akaya Kanadaka", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.over .game-over {
+  color: red;
+}
+
+.over .score {
+  font-size: 30px;
+}
+.over button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Akaya Kanadaka", cursive;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+}
