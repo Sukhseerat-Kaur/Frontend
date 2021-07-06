@@ -33,7 +33,7 @@ body {
   align-self: center;
 }
 
-.contest-name a {
+.contest-name {
   text-decoration: none;
   color: #d602ee;
   font-size: 30px;

@@ -51,7 +51,7 @@ function addContestTohtml(contestObj) {
   // duration = `${durationHours} : ${durationMins}`;
 
   let addhtml = ` <div class="contest-card">
-                    <div class="contest-name"><a href=${contestObj.websiteUrl}>${contestObj.name}</a></div>
+                    <div class="contest-name">${contestObj.name}</div>
                     <div class="day">Day: ${day}</div>
                     <div class="start-time">Date: ${date}</div>
                     <div class="time-to-start">Starts In: ${diffInDays}</div>
