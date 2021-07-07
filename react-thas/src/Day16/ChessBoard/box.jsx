@@ -1,6 +1,5 @@
-const n = 8;
-function boxes() {
-  return [...Array(n)].map((element, index) => <div className="box"></div>);
+function box() {
+  return <div className="box"></div>;
 }
 
-export default boxes;
+export default box;

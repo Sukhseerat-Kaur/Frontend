@@ -1,0 +1,11 @@
+.links {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  margin-bottom: 10px;
+}

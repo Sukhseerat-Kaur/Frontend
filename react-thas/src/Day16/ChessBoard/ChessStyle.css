@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .board {
   border: 15px solid black;

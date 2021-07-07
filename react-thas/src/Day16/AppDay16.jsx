@@ -1,15 +1,15 @@
 import Card from "./Card/CardBox";
-import Board from "./ChessBoard/board";
+import Board from "./ChessBoard/Board";
 import "./Day16Style.css";
 import "./Card/cardStyle.css";
 import "./ChessBoard/ChessStyle.css";
-const Day16 = () => {
+const AppDay16 = () => {
   return (
-    <div className="day16">
+    <div className="app-day-16">
       <Card />
       <Board />
     </div>
   );
 };
 
-export default Day16;
+export default AppDay16;

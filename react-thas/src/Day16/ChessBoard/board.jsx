@@ -1,9 +1,16 @@
-import Rows from "./rows";
+import Row from "./Row";
 
 function board() {
   return (
     <div className="board">
-      <Rows />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
+      <Row />
     </div>
   );
 }
