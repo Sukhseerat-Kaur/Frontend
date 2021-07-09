@@ -1,0 +1,21 @@
+.app-day-18 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chessboard {
+  border: 15px solid black;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+}
+.box {
+  flex: 1;
+}
