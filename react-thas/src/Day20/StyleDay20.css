@@ -1,0 +1,41 @@
+.app-day-20 {
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* align-content: space-around; */
+  flex-direction: column;
+}
+
+.calorie-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calorie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: paleturquoise;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.item {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+button {
+  align-self: flex-end;
+  width: 15%;
+  padding: 5px 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
