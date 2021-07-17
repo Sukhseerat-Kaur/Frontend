@@ -41,6 +41,7 @@ body {
   flex-direction: column;
   padding: 0 15px 8px 15px;
   margin-top: 5px;
+  overflow: auto;
 }
 
 .add-todo {
