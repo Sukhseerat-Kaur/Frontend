@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+.app-day-21 {
+  margin-top: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top {
+  width: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 48%;
+  padding: 6px;
+  border: 1px solid rgb(177, 175, 175);
+}
+
+input[type="submit"] {
+  width: 100%;
+  color: white;
+  background-color: blueviolet;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.calorie-list {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  border: 1px solid rgba(201, 197, 197, 0.616);
+  height: 120px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.btns {
+  margin-top: 10px;
+}
+
+.dlt,
+.edit {
+  all: revert; /* to cancel all properties that were coming from day20 style css file */
+  background-color: rgb(204, 25, 25);
+  color: white;
+  border: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
