@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-day-22 h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.app-day-22 .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-day-22 .template {
+  width: 33.333%;
+  min-width: 400px;
+  border: 10px solid transparent;
+}
+
+.app-day-22 .template .image {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+
+.app-day-22 .meme {
+  text-align: center;
+}
+
+.app-day-22 .meme img {
+  width: auto;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.app-day-22 .meme input {
+  margin: 10px;
+  padding: 5px;
+}
+
+.app-day-22 .meme button {
+  margin: 10px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: slateblue;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.app-day-22 .meme button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.app-day-22 .meme button:active {
+  transform: scale(0.98);
+}

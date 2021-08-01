@@ -8,6 +8,7 @@ const Links = () => {
       <a href="http://localhost:3000/AppDay19">Day19</a>
       <a href="http://localhost:3000/AppDay20">Day20</a>
       <a href="http://localhost:3000/AppDay21">Day21</a>
+      <a href="http://localhost:3000/AppDay22">Day22</a>
     </div>
   );
 };
