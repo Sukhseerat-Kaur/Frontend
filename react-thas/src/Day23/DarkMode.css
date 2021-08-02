@@ -1,0 +1,11 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+.app-day-23 {
+  height: 100vh;
+  text-align: center;
+}
+.app-day-23.dark-mode {
+  background-color: #1d2127;
+  color: white;
+}
