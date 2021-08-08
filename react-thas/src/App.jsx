@@ -8,6 +8,7 @@ import AppDay20 from "./Day20/AppDay20";
 import AppDay21 from "./Day21/AppDay21";
 import AppDay22 from "./Day22/AppDay22";
 import AppDay23 from "./Day23/AppDay23";
+import AppDay24 from "./Day24/AppDay24";
 import Links from "./Links";
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/AppDay21" component={AppDay21} />
         <Route path="/AppDay22" component={AppDay22} />
         <Route path="/AppDay23" component={AppDay23} />
+        <Route path="/AppDay24" component={AppDay24} />
         <Route component={Links} />
       </Switch>
     </div>
