@@ -9,13 +9,17 @@
   margin-bottom: 20px;
 }
 
+a.active {
+  border-bottom: 2px solid orangered;
+}
+
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-a {
+.app-day-24 a {
   text-decoration: none;
   color: black;
 }
@@ -26,6 +30,7 @@ a {
   width: max-content;
   padding: 4px 8px;
 }
+
 .green {
   color: rgb(35, 179, 35);
 }

@@ -1,13 +1,19 @@
-// import { useContext } from "react";
-// import { LoginDetail } from "./Authentication";
+import { useContext } from "react";
+import { LoginDetail } from "./Authentication";
 
 function Dashboard() {
-  //   const [isLoggedIn, toggleLog] = useContext(LoginDetail);
+  const logger = useContext(LoginDetail);
 
   return (
     <div className="dashboard page">
-      <h1>Dashboard: Private Route</h1>
-      <h3>Hey user, you are logged in</h3>
+      {logger.isLoggedIn ? (
+        <div>
+          <h1>Dashboard: Private Route</h1>
+          <h3>Hey user, you are logged in</h3>
+        </div>
+      ) : (
+        <h1>Dashboard</h1>
+      )}
     </div>
   );
 }

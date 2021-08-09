@@ -15,9 +15,9 @@ function AppDay24() {
           <Navbar />
           <Switch>
             <Route exact path="/AppDay24/" component={Home} />
-            <Route path="/AppDay24/about" component={About} />
-            <Route path="/AppDay24/profile" component={Profile} />
-            <Route path="/AppDay24/dashboard" component={Dashboard} />
+            <Route exact path="/AppDay24/about" component={About} />
+            <Route exact path="/AppDay24/profile" component={Profile} />
+            <Route exact path="/AppDay24/dashboard" component={Dashboard} />
           </Switch>
         </Authentication>
       </BrowserRouter>

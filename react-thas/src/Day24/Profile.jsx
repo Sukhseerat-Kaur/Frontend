@@ -1,8 +1,17 @@
+import { useContext } from "react";
+import { LoginDetail } from "./Authentication";
 function Profile() {
+  const logger = useContext(LoginDetail);
   return (
     <div className="profile page">
-      <h1>Profile: Private Route</h1>
-      <h3>Hey user, you are logged in</h3>
+      {logger.isLoggedIn ? (
+        <div>
+          <h1>Profile: Private Route</h1>
+          <h3>Hey user, you are logged in</h3>
+        </div>
+      ) : (
+        <h1>Dashboard</h1>
+      )}
     </div>
   );
 }

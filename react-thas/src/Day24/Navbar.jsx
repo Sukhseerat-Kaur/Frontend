@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import { LoginDetail } from "./Authentication";
 
 function Navbar() {
@@ -14,17 +14,11 @@ function Navbar() {
         About
       </NavLink>
 
-      <NavLink
-        to={`/AppDay24/${logger.isLoggedIn ? "dashboard" : ""}`}
-        activeClassName="active"
-      >
+      <NavLink exact to="/AppDay24/dashboard" activeClassName="active">
         Dashboard
       </NavLink>
 
-      <NavLink
-        to={`/AppDay24/${logger.isLoggedIn ? "profile" : ""}`}
-        activeClassName="active"
-      >
+      <NavLink exact to="/AppDay24/profile" activeClassName="active">
         Profile
       </NavLink>
     </div>

@@ -9,6 +9,7 @@ import AppDay21 from "./Day21/AppDay21";
 import AppDay22 from "./Day22/AppDay22";
 import AppDay23 from "./Day23/AppDay23";
 import AppDay24 from "./Day24/AppDay24";
+// import AppDay25 from "./Day25/AppDay25";
 import Links from "./Links";
 const App = () => {
   return (

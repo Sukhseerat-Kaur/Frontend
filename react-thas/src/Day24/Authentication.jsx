@@ -1,7 +1,4 @@
 import { createContext, useState } from "react";
-import Home from "./Home";
-import Dashboard from "./Dashboard";
-import Profile from "./Profile";
 
 const LoginDetail = createContext();
 
