@@ -1,9 +1,6 @@
-import { useContext } from "react";
-import { NavLink, Redirect } from "react-router-dom";
-import { LoginDetail } from "./Authentication";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
-  const logger = useContext(LoginDetail);
   return (
     <div className="navbar">
       <NavLink exact to="/AppDay24/" activeClassName="active">

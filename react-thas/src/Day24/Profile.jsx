@@ -10,7 +10,7 @@ function Profile() {
           <h3>Hey user, you are logged in</h3>
         </div>
       ) : (
-        <h1>Dashboard</h1>
+        <h1>Profile</h1>
       )}
     </div>
   );

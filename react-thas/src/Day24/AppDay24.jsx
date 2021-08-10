@@ -11,8 +11,8 @@ function AppDay24() {
   return (
     <div className="app-day-24">
       <BrowserRouter>
+        <Navbar />
         <Authentication>
-          <Navbar />
           <Switch>
             <Route exact path="/AppDay24/" component={Home} />
             <Route exact path="/AppDay24/about" component={About} />
