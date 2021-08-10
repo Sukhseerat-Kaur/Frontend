@@ -14,16 +14,16 @@ function App() {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">PhotoGallery</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home" className="px-5">
-              Home
+              Food
             </Nav.Link>
             <Nav.Link href="#features" className="px-5">
-              Features
+              Animals
             </Nav.Link>
             <Nav.Link href="#pricing" className="px-5">
-              Pricing
+              Destinations
             </Nav.Link>
           </Nav>
         </Container>
