@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 
 const Data = () => {
   const state = useSelector((state) => state.copyReducer);
-  console.log(state);
   return (
     <div className="data">
       <h1>DATA</h1>
