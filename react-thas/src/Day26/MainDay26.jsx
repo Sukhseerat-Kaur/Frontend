@@ -3,7 +3,7 @@ import AppDay26 from "./AppDay26";
 import { Provider } from "react-redux";
 import store from "./Store";
 
-const Main = () => {
+const MainDay26 = () => {
   return (
     <Provider store={store}>
       <div>
@@ -13,4 +13,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainDay26;
