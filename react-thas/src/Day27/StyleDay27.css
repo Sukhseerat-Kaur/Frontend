@@ -1,0 +1,73 @@
+.app-day-27 {
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column;
+  align-items: center; */
+  justify-content: center;
+}
+
+.app-day-27 .todo-list {
+  display: flex;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-day-27 input {
+  border-radius: 3px;
+  border: 2px solid rgb(187, 183, 183);
+  margin-right: 10px;
+  height: 35px;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 300px;
+}
+
+.app-day-27 input:focus {
+  border: 2px solid rgb(191, 132, 247);
+  outline: none;
+}
+
+.app-day-27 button {
+  min-width: max-content;
+  width: 50px;
+  padding: 0 3px;
+  border-radius: 3px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  height: 35px;
+}
+
+.app-day-27 .todo-item {
+  border: 1px solid rgb(204, 201, 201);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.app-day-27 .todo-text {
+  margin-left: 8px;
+  text-align: center;
+}
+
+.app-day-27 .dlt-btn {
+  margin-left: auto;
+  height: 25px;
+  font-size: 13px;
+}
+
+.app-day-27 .completed {
+  text-decoration: line-through;
+  color: rgb(204, 197, 197);
+  margin-left: 8px;
+  text-align: center;
+}
+
+.app-day-27 .pointer {
+  cursor: pointer;
+}
