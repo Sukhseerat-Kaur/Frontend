@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 4px;
+}
+/* .search-box {
+  margin-top: 50px;
+} */
+
+.search-box {
+  margin-top: 30px;
+}
+.search-box input {
+  padding: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.096);
+  color: #313131;
+  font-size: 18px;
+}
+
+.search-box button {
+  margin: 15px 5px;
+  padding: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  color: #313131;
+  border-radius: 6px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.096);
+  cursor: pointer;
+}
+
+.search-box input:focus,
+.search-box button:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* .App .card {
+  height: 100vh;
+} */
+
+.weather-box {
+  margin-top: 50px;
+}
+.weather-box .card-box img {
+  width: 8%;
+  margin-top: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background: url("./images/cold-bg.jpg") center center/cover; */
+  background-image: url("./images/cold-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70%;
+  height: 70vh;
+}
+
+.container.warm {
+  background-image: url("./images/cold-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70%;
+  height: 70vh;
+}
+.weather-box .card-box .temperature {
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 30%;
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: rgb(212, 209, 209);
+  font-size: 102px;
+  font-weight: 800;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.weather-box .card-box .location {
+  color: #ffff;
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .card-box .country {
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.properties {
+  margin-top: 30px;
+  display: flex;
+  width: 28%;
+}
+
+.properties .title {
+  color: #ffff;
+  font-size: 18px;
+}
+
+.properties .data {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.properties .data .unit {
+  color: #ffff;
+}

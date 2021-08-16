@@ -14,6 +14,7 @@ const Links = () => {
       <a href="http://localhost:3000/AppDay25">Day25</a>
       <a href="http://localhost:3000/MainDay26">Day26</a>
       <a href="http://localhost:3000/MainDay27">Day27</a>
+      <a href="http://localhost:3000/AppDay28">Day28</a>
     </div>
   );
 };
