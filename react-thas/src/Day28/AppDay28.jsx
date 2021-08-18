@@ -23,7 +23,7 @@ const AppDay28 = () => {
     return <div>loading</div>;
   }
   return (
-    <div className="App">
+    <div className="app-day-28">
       <div className="main">
         <div className="search-box ">
           <input

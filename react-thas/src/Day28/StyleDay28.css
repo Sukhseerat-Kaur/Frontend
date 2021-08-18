@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.App {
+.app-day-28 {
   text-align: center;
 
   font-family: "Montserrat", sans-serif;
@@ -84,7 +84,7 @@
 }
 
 .container.warm {
-  background-image: url("./images/cold-bg.jpg");
+  background-image: url("./images/warm-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 70%;
@@ -93,7 +93,7 @@
 .weather-box .card-box .temperature {
   margin: 15px;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 30%;
+  min-width: 30%;
   border-radius: 16px;
   padding: 15px 25px;
   color: rgb(212, 209, 209);
