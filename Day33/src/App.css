@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.todos {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top {
+  margin-bottom: 30px;
+}
+.top input,
+.top button {
+  margin-right: 8px;
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+}
+
+.top input {
+  border: 2px solid rgb(189, 186, 186);
+  padding: 8px;
+  width: 300px;
+  font-size: medium;
+}
+.top input:focus {
+  border: 2px solid rgb(166, 89, 238);
+  outline: none;
+}
+
+.top button {
+  width: 70px;
+  background-color: rgb(166, 89, 238);
+  color: white;
+  font-weight: 100px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.todo-item {
+  border: 1px solid rgb(192, 187, 187);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.todo-item .title {
+  display: inline-block;
+  font-size: larger;
+}
+.todo-item button {
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.todo-item .delete-btn {
+  margin-left: 250px;
+  background-color: rgb(164, 85, 238);
+  color: white;
+  border: none;
+}
+.todo-item .completed-btn {
+  margin-right: 10px;
+  background-color: white;
+  border: 2px solid blueviolet;
+  padding: 5px;
+  font-size: x-small;
+}
+.todo-item .title.completed {
+  text-decoration: line-through;
+  color: rgb(153, 149, 149);
+}
