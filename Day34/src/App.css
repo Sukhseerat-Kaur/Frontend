@@ -1,0 +1,64 @@
+.notes-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notes-app input,
+.notes-app .add-btn {
+  margin-right: 8px;
+  border-radius: 3px;
+  border: none;
+}
+
+.notes-app input {
+  border: 2px solid rgb(189, 186, 186);
+  padding: 5px;
+  width: 300px;
+  font-size: medium;
+  height: 25px;
+}
+
+.notes-app .input:focus {
+  border: 2px solid rgb(166, 89, 238);
+  outline: none;
+}
+
+.notes-app .add-btn {
+  width: 70px;
+  background-color: rgb(166, 89, 238);
+  color: white;
+  font-weight: 100px;
+  font-size: medium;
+  cursor: pointer;
+  height: 35px;
+}
+
+.notes {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes-item {
+  border: 1px solid rgb(192, 187, 187);
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.notes-item h3 {
+  display: inline;
+}
+
+.notes-item .dlt-btn {
+  cursor: pointer;
+  padding: 7px;
+  margin-left: 280px;
+  border-radius: 4px;
+  background-color: rgb(164, 85, 238);
+  color: white;
+  border: none;
+}
