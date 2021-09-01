@@ -7,29 +7,30 @@ import Post from "./Post";
 
 const Landing = ({ posts }: { posts: PostType[] }) => {
   const userData = useSelector((state: reducerType) => state.userReducer);
-  console.log(posts);
 
   return (
     <div className="landing">
-      <div className="stories">
-        {[...Array(20)].map((_, index) => {
-          return (
-            <div className="one-story" key={index}>
-              <div className="story-img">
-                <img src={userData.profilePicture} alt="" />
-                <div className="name">{userData.username}</div>
+      <div className="left">
+        <div className="stories">
+          {[...Array(20)].map((_, index) => {
+            return (
+              <div className="one-story" key={index}>
+                <div className="story-img">
+                  <img src={userData.profilePicture} alt="" />
+                  <div className="name">{userData.username}</div>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <div className="posts">
+          {[
+            ...posts.map((postObj, index) => {
+              return <Post postObj={postObj} key={index} />;
+            }),
+          ]}
+        </div>
       </div>
-      {/* <div className="posts">
-        {[
-          ...posts.map((postObj, index) => {
-            return <Post postObj={postObj} key={index} />;
-          }),
-        ]}
-      </div> */}
     </div>
   );
 };

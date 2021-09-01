@@ -17,19 +17,19 @@ const Navbar = () => {
         </div>
         <div className="icons">
           <span>
-            <AiFillHome size="1.5em" />
+            <AiFillHome size="1.5em" className="pointer" />
           </span>
           <span>
-            <RiChat3Line size="1.6em" />
+            <RiChat3Line size="1.6em" className="pointer" />
           </span>
           <span>
-            <FaRegCompass size="1.5em" />
+            <FaRegCompass size="1.5em" className="pointer" />
           </span>
           <span>
-            <FiHeart size="1.5em" />
+            <FiHeart size="1.5em" className="pointer" />
           </span>
           <span className="profile-picture">
-            <img src={userData.profilePicture} alt="" />
+            <img src={userData.profilePicture} alt="" className="pointer" />
           </span>
         </div>
       </div>
