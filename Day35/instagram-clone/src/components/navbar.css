@@ -1,0 +1,57 @@
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 55px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 30px;
+  position: fixed;
+  background-color: white;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+}
+
+.search-bar-container {
+  display: flex;
+  width: 655px;
+  justify-content: center;
+}
+
+.search-bar-container input {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  border-radius: 3px;
+  padding: 0 20px;
+}
+
+input::placeholder {
+  color: #c9c6c6;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #dbdbdb;
+  text-align: left;
+}
+
+.icons {
+  margin-left: auto;
+  /* margin-right: 260px; */
+}
+
+.icons span {
+  margin-right: 30px;
+}
+
+.icons .profile-picture img {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+}
